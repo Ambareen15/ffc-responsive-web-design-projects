@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+#title {
+  text-align: center;
+	font-family: "Lekton";
+	padding-top: 30px;
+}
+
+#description {
+  text-align: center;
+}
+
+body {
+	background:linear-gradient(-90deg, #EE7752, #E73C7E);
+}
+
+#survey-form {
+  text-align: center;
+  background-color: #000;
+	opacity: 0.7;
+	color: #fff;
+  width: 75%;
+    padding:0 auto;
+  margin: 0 auto;
+  border-radius:25px;
+  display: block;
+	box-shadow: 0 0 15px;
+}
+
+.label {
+  width: 100%;
+  margin: 20px;
+  text-align:left;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  width: 70%;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.yes,
+.no {
+	display:inline-block;
+	text-align: right;
+	width: 20%;
+	float: left;
+}
+
+#yes,
+#no {
+	text-align: left;
+	width: 5%;
+	display:inline-block;
+	float: left;
+}
+
+.checkbox {
+	float: left;
+	width:50%;
+}
+
+.box {
+	float:left;
+	
+}
+
+.checkbox-list {
+	line-height: 20px;
+}
+
+#submit {
+	border-radius: 10px;
+	padding: 5px 12px;
+	cursor: pointer;
+	box-shadow: 0 0 5px white;
+}
+
+#submit:hover {
+	background-color: coral;
+	transition: background-color 0.5s ease;
+	box-shadow: 0 0 5px  white;
+}

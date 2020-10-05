@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <title>Survey Form</title>
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header>
+    <h1 id="title">Apple Product Survey Form</h1>
+  </header>
+  <main>
+    <p id="description"><i>Fill out this quick survey to give your thoughts on the multi trillion-dollar company that is Apple.</i></p>
+    <br/>
+    <form id="survey-form">
+      <br>
+      <div class="label">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="input">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="label">
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="input">
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="label">
+        <label  for="number" id="number-label">Age:</label>
+      </div>
+      <div class="input">
+        <input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="150" required>
+      </div>
+      <div class="label">
+        <label for="dropdown" >What Apple device do you currently own? (If any)</label>
+      </div>
+      <div class="input">
+        <select id="dropdown" name="device-name">
+          <option value="iphone SE (2nd generation)"> iPhone SE (2nd generation)</option>
+          <option value="iphone 11 pro max"> iPhone 11 Pro Max</option>
+          <option value="iphone 11 pro"> iPhone 11 Pro</option>
+          <option value="iphone 11"> iPhone 11</option>
+          <option value="iphone xs max"> iPhone XS Max</option>
+          <option value="iphone xs"> iPhone XS</option>
+          <option value="iphone xr"> iPhone XR</option>
+          <option value="iphone x"> iPhone X</option>
+          <option value="iphone 8 plus"> iPhone 8 Plus</option>
+          <option value="iphone 8"> iPhone 8</option>
+          <option value="iphone 7 plus"> iPhone 7 Plus</option>
+          <option value="iphone 7"> iPhone 7</option>
+          <option value="iphone SE (1st generation)"> iPhone SE (1st generation)</option>
+          <option value="iphone 6s plus"> iPhone 6s Plus</option>
+          <option value="iphone 6s"> iPhone 6s</option>
+          <option value="iphone 6 plus"> iPhone 6 Plus</option>
+          <option value="iphone 6"> iPhone 6</option>
+          <option value="iphone 5s"> iPhone 5s</option>
+          <option value="iphone 5c"> iPhone 5c</option>
+          <option value="iphone 5"> iPhone 5</option>
+          <option value="other"> Other</option>
+        </select>
+      </div>
+			<div class="label">
+				<p>Are you planning on upgrading when Apple release a new device?</p>
+			</div>
+			<div class="radio">
+				<label class="yes" for="yes">Yes</label>
+				<input type="radio" id="yes" name="answer" value="yes">
+				<br>
+				<label class="no" for="no">No</label>
+				<input type="radio" id="no" name="answer" value="no">
+			</div>
+			<br>
+			<br>
+			<div class="label">
+				<p>Which products would you most want if you could have them for free?<br>(Don't tick all the boxes).</p>
+			</div>
+			<div class="checkbox-list">
+				<label for="iphone11" class="checkbox">iPhone 11</label>
+				<input type="checkbox" id="iphone11" name="pick" value="iphone11" class="box">
+				<br>
+				<label for="applewatch" class="checkbox">Apple Watch Series 6</label>
+				<input type="checkbox" id="applewatch" name="pick" value="appplewatch" class="box">
+				<br>
+				<label for="ipadpro" class="checkbox">iPad Pro</label>
+				<input type="checkbox" id="ipadpro" name="pick" value="ipadpro" class="box">
+				<br>
+				<label for="ipad7thgen" class="checkbox">Apple iPad (7th generation)</label>
+				<input type="checkbox" id="ipad7thgen" name="pick" value="ipad7thgen" class="box">
+				<br>
+				<label for="appletv" class="checkbox">Apple TV</label>
+				<input type="checkbox" id="appletv" name="pick" value="appletv" class="box">
+				<br>
+				<label for="macbookpro" class="checkbox">Macbook Pro</label>
+				<input type="checkbox" id="macbookpro" name="pick" value="macbookpro" class="box">
+				<br>
+				<label for="macbookair" class="checkbox">Macbook Air</label>
+				<input type="checkbox" id="macbookair" name="pick" value="macbookair" class="box">
+				<br>
+				<label for="imac" class="checkbox">iMac</label>
+				<input type="checkbox" id="imac" name="pick" value="imac" class="box">
+			</div>
+			<br>
+			<br>
+			<br>
+			<label class="label" for="comment">Comment below what your thoughts on Apple are: </label>
+			<br>
+			<br>
+			<textarea id="comment" name="comment" rows="5" cols="20"></textarea>
+			<br>
+			<br>
+			<input type="submit" id="submit">
+			<br>
+			<br>
+    </form>
+			<br>
+			<br>
+</body>
+</html>
