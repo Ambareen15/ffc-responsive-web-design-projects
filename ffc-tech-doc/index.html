@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <title>CSS Basics</title>
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <nav id="navbar">
+    <header class="nav-header">CSS Basics</header>
+    <ul>
+      <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
+      <li><a href="#How_to_write_CSS" class="nav-link">How to write CSS</a></li>
+      <li><a href="#Basic_Styling_Methods" class="nav-link">Basic Styling Methods</a></li>
+      <li><a href="#The_Box_Model" class="nav-link">The Box Model</a></li>
+      <li><a href="#Positioning" class="nav-link">Positioning</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+      <header class="main-header">
+        CSS Basics
+      </header>
+    <section class="main-section" id="What_is_CSS?">
+      <header class="section-header">What is CSS?</header>
+      <p>CSS stands for Cascading Style Sheets. It is not actually a programming language but it is infact a style sheet language. In order to use CSS, you must first learn HTML as CSS is used to style HTML. CSS selects HTML elemnts to individually style.</p>
+      <br>
+      <p>To apply the CSS to our HTML elements, it is crucial that the files are both linked. An easy way to do this is to add the following short line of code into the head of our index.html file:</p>
+      <br>
+      <br>
+      <br>
+     <pre> <code> &ltlink href="styles/style.css" rel="stylesheet"&gt </code></pre>
+      <br>
+    </section>
+    <section class="main-section" id="How_to_write_CSS">
+      <header class="section-header">How to write CSS</header>
+      <p>CSS syntax is very simple but there are a few things to know. To start, we must think about which HTML element we want to select. For elements we would just use the word of the element.</p>
+      <p> For example, to select a &ltp&gt&lt/p&gt tag we would write the syntax:</p>
+      <pre><code>  p {
+      
+  }</code></pre>
+      <p>Anything we put into this selector would style that p tag.</p>
+      <p>For class attributes, we use a period (.) before writing out the value of the class and for id attributes we use a hash (#) before the value of the id.</p>
+      <p>Selecting the class of &ltheader class="header"&gt would look like:</p>
+      <pre><code>.header {
+      
+  }</code></pre>
+      <p>Selecting the id of &ltheader id="header"&gt would look like:</p>
+      <pre><code>#header {
+      
+  }</code></pre>
+    </section>
+    <section class="main-section" id="Basic_Styling_Methods">
+      <header class="section-header">Basic Styling Methods</header>
+      <p>Now we know how to select a HTML element but how do we add styles?</p>
+      <p>There are many different ways to style HTML such as thinking about the font, color and even size of an element.</p>
+      <p> The basic syntax is to decide what you want to style and then write the style name for that. After the style name we add a colon (:) and then the specific change we want. Then we add a semicolon (;) on the end.</p>
+      <p>For example, if we wanted to change the color of a paragraph to red. First, we would select the p and add cursive brackets. Inside these brackets we would write our style name, in this case "color" and then put a colon. Then we would write "red" and add a semicolon on the end.</p>
+      <p>The syntax would look like this:</p>
+      <pre><code>  p {
+   color: red;
+  }</code></pre>
+      <p>Basic Styles:</p>
+      <ul class="style-list">
+        <li><b>font-family</b> = The typeface of our element.</li>
+        <li><b>font-size</b> = The size of the font written in pixels (i.e. 20px).</li>
+        <li><b>font-weight</b> = the thickness of our font (i.e bold, normal, lighter).</li>
+        <li><b>color</b> = To change the color.</li>
+        <li><b>opacity</b> = Transparency of element.</li>
+        <li><b>background-image</b> = To add a background image, use url () for this.</li>
+        <li><b>text-align</b> = To align text along the page (i.e. left, center, right).</li>
+      </ul>
+      <p>There are many more styles not included on this document so feel free to do your own research.</p>
+    </section>
+    <section class="main-section" id="The_Box_Model">
+      <header class="section-header">The Box Model</header>
+      <p>The box model is about how elements are positioned and displayed on a website. The computer has to be told which elements positions need to be altered.</p>
+      <p>The properties of a box model include:</p>
+      <ul class="box-model-properties">
+        <li><b>Width and height</b> = The width and height of the content area.</li>
+        <li><b>Padding</b> = The amount of space between the content area and the border.</li>
+        <li><b>Border</b> = The thickness and style of the border surrounding the content.</li>
+        <li><b>Margin</b> = The amount of space between the border and the outside edge of the element.</li>
+      </ul>
+      <img class="bm-img" src="https://www.kasandbox.org/programming-images/misc/boxmodel.png" alt="An image of the box model">
+      <p>We can also only add a property to one side of an element using: top, right, bottom or left</p>
+      <p>For example, if we wanted to add a margin of 20 pixels to the left of a h1 element, we could write:</p>
+      <pre><code> h1 {
+  margin-left: 20px;
+ }</code></pre>
+    </section>
+    <section class="main-section" id="Positioning">
+      <header class="section-header">Positioning</header>
+      <p>There are ways to position elements on the page. One is by using the position style. These include:</p>
+      <ul class="position-list">
+        <li>position</li>
+        <li>display</li>
+        <li>z-index</li>
+        <li>float</li>
+        <li>clear</li>
+      </ul>
+      <p>The <b>position</b> property can take 1 of 4 values:</p>
+      <ul class="position-list">
+        <li><b>Static</b> - The default value (does not need to bbe specified).</li>
+        <li><b>Relative</b> - Allows you to position an element relative to its default position.</li>
+        <li><b>Absolute</b> - The element will be positioned relative to its closest positioned parent elements.</li>
+        <li><b>Fixed</b> - The element will be fixed on the page. Scrolling will not make it move either.</li>
+      </ul>
+      <p><b>z-index</b> - When elements overlap eachother, we can use z-index to make one appear over the other. To do this we add a z-index property and give it a number. The higher number will show infront.</p>
+      <p><b>float</b>- This is to move an element as far left or as far right as possible (i.e. left, right)</p>
+      <p><b>clear</b>- Using float can cause elements to bump into eachother. To avoid this, we can use clear to make space around the sides of the element. Right clears right side. Left clears the left side. Both clears both sides.</p>
+      <br>
+      <p>For more information on this topic visit MDN Web Docs.</p>
+    </section>
+  </main>
+</body>
+</html>
